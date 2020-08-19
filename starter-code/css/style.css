@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@600;700&display=swap');
+
+:root {
+  /* COLORS */
+  --midnightGreen: #014e56;
+  --lightCoral: #f67e7e;
+  --white: #ffffff;
+  --raptureBlue: #79c8c7;
+  --policeBlue: #2c6269;
+  --jungleGreen: #004047;
+  --sacramentoGreen: #012f34;
+  --darkGreen: #002529;
+
+  /* TEXT */
+  --font: 'Livvic', sans-serif;
+
+  --transition: all 250ms ease-in-out;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font);
+  font-weight: 600;
+  line-height: 1.75;
+  font-size: 1.125rem;
+  background: var(--midnightGreen);
+}
+
+p + .small {
+  font-size: 0.9375rem;
+  line-height: 1.5625;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 6.25rem;
+  line-height: 1;
+}
+
+h1 + .small {
+  font-size: 4rem;
+  line-height: 0.875;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+
+button,
+.btn {
+  cursor: pointer;
+  border-radius: 24px;
+  padding: 0.5625rem 2rem;
+  border: 2px solid var(--white);
+  background: transparent;
+  color: var(--white);
+  transition: var(--transition);
+  font-weight: 600;
+}
+
+button:hover,
+.btn:hover {
+  background: var(--white);
+  color: var(--sacramentoGreen);
+}
+
+.btn--dark {
+  border: 2px solid var(--sacramentoGreen);
+  color: var(--sacramentoGreen);
+  background: transparent;
+}
+
+.btn--dark:hover {
+  color: var(--white);
+  background-color: var(--sacramentoGreen);
+}
+
+.btn--secondary {
+  background-color: var(--white);
+  color: var(--sacramentoGreen);
+}
+
+.btn--secondary:hover {
+  background-color: var(--raptureBlue);
+  color: var(--sacramentoGreen);
+  border-color: var(--raptureBlue);
+}
