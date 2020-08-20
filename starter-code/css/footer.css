@@ -1,0 +1,127 @@
+footer {
+  background: var(--darkGreen);
+  width: 100vw;
+}
+
+.footer__container {
+  padding: 4.125rem 4.125rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.footer__logo {
+  width: 6rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer__links {
+  margin-bottom: 1.5rem;
+}
+
+.footer__link:first-child {
+  margin-right: 1.5rem;
+}
+
+.footer__address {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 2.5rem;
+}
+
+.footer__socials {
+  margin-bottom: 1rem;
+}
+
+.footer__socialIcon {
+  padding: 0 0.5rem;
+}
+
+.footer__copyright {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 48rem) {
+  .footer__container {
+    padding: 3.5rem 2.5rem;
+    grid-template-areas:
+      'logo address'
+      'links address'
+      'socials copyright';
+    grid-gap: 2rem;
+    justify-items: start;
+    align-items: center;
+  }
+
+  .footer__logo {
+    grid-area: logo;
+    margin-bottom: 0;
+  }
+
+  .footer__links {
+    grid-area: links;
+    margin-bottom: 0;
+    align-self: end;
+  }
+
+  .footer__address {
+    grid-area: address;
+    justify-self: end;
+    margin-bottom: 0;
+    text-align: right;
+  }
+
+  .footer__socials {
+    grid-area: socials;
+    margin-bottom: 0;
+    height: 100%;
+  }
+
+  .footer__socialIcon:first-child {
+    padding-left: 0;
+  }
+
+  .footer__copyright {
+    grid-area: copyright;
+    justify-self: end;
+  }
+}
+
+@media screen and (min-width: 69.375rem) {
+  .footer__container {
+    max-width: 69.375rem;
+    margin: 0 auto;
+    padding: 3rem 0;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      'logo address . socials'
+      'links address . copyright';
+    grid-gap: 0;
+  }
+
+  .footer__logo {
+    width: 10rem;
+  }
+
+  .footer__link {
+    font-size: var(--baseFontSize);
+  }
+
+  .footer__address {
+    text-align: left;
+    justify-self: start;
+  }
+
+  .footer__socials {
+    align-self: center;
+    justify-self: end;
+  }
+
+  .footer__socialIcon:last-child {
+    padding-right: 0;
+  }
+
+  .footer__copyright {
+    align-self: end;
+  }
+}

@@ -13,6 +13,7 @@
 
   /* TEXT */
   --font: 'Livvic', sans-serif;
+  --baseFontSize: 1.125rem;
 
   --transition: all 250ms ease-in-out;
 }
@@ -28,9 +29,10 @@ body {
   line-height: 1.75;
   font-size: 1.125rem;
   background: var(--midnightGreen);
+  color: var(--white);
 }
 
-p + .small {
+.smallText {
   font-size: 0.9375rem;
   line-height: 1.5625;
 }
@@ -99,4 +101,14 @@ button:hover,
   background-color: var(--raptureBlue);
   color: var(--sacramentoGreen);
   border-color: var(--raptureBlue);
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
 }
