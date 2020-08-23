@@ -106,9 +106,19 @@ button:hover,
 a {
   color: var(--white);
   text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--lightCoral);
 }
 
 img {
   max-width: 100%;
   display: inline-block;
+}
+
+.container {
+  max-width: 69.375rem;
+  margin: 0 auto;
 }

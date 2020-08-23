@@ -1,0 +1,51 @@
+.cta {
+  background: var(--lightCoral);
+  position: relative;
+}
+
+.cta__container {
+  padding: 5.25rem 1.5rem;
+  text-align: center;
+}
+
+.cta__heading {
+  color: var(--sacramentoGreen);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.cta::after {
+  content: '';
+  position: absolute;
+  background-image: url('../images/bg-pattern-home-6-about-5.svg');
+  width: 200px;
+  height: 124px;
+  bottom: 0;
+  left: 0;
+}
+
+@media screen and (min-width: 48rem) {
+  .cta__container {
+    padding: 4.75rem 6.125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cta__heading {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 69.375rem) {
+  .cta__heading {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 77rem) {
+  .cta::after {
+    height: 144px;
+  }
+}
