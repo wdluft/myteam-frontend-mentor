@@ -1,0 +1,144 @@
+.hero {
+  position: relative;
+  background: var(--midnightGreen);
+}
+
+.hero__container {
+  padding: 12.25rem 1.5rem;
+  text-align: center;
+}
+
+.hero__heading {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero__description {
+  font-size: var(--smallText);
+  line-height: var(--smallLineHeight);
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  background-image: url('../images/bg-pattern-home-2.svg');
+  height: 100px;
+  width: 358px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 40rem) {
+  .hero__heading {
+    font-size: 4rem;
+    line-height: 3.5rem;
+  }
+
+  .hero__container {
+    padding: 14rem 9.75rem;
+  }
+}
+
+@media screen and (min-width: 69.375rem) {
+  .hero::before {
+    content: '';
+    position: absolute;
+    background-image: url('../images/bg-pattern-home-1.svg');
+    width: 200px;
+    height: 200px;
+    left: -100px;
+    top: 10.75rem;
+  }
+  .hero__container {
+    padding: 10.75rem 0;
+    max-width: 69.375rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+    text-align: left;
+  }
+
+  .hero__heading {
+    font-size: 6.25rem;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+
+  .hero__description {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: var(--bodyText);
+  }
+
+  .hero__description::before {
+    content: '';
+    width: 3.125rem;
+    height: 0.25rem;
+    background: var(--raptureBlue);
+  }
+}
+
+/* PRODUCT SECTION */
+.product {
+  background: var(--sacramentoGreen);
+  position: relative;
+}
+
+.product::before {
+  content: '';
+  position: absolute;
+  background-image: url('../images/bg-pattern-home-3.svg');
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 244px;
+}
+
+.product__container {
+  padding: 4rem 1.5rem;
+}
+
+.product__heading {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 2rem;
+  margin-right: 5.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.product__heading::before {
+  content: '';
+  width: 3.125rem;
+  height: 0.25rem;
+  background: var(--lightCoral);
+  margin-bottom: 2rem;
+}
+
+.product__feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.feature__icon {
+  margin-bottom: 1rem;
+}
+
+.feature__heading {
+  color: var(--lightCoral);
+  margin-bottom: 0.5rem;
+}
+
+.feature__description {
+  font-size: var(--smallText);
+  line-height: var(--smallLineHeight);
+}
