@@ -142,3 +142,49 @@
   font-size: var(--smallText);
   line-height: var(--smallLineHeight);
 }
+
+@media screen and (min-width: 48rem) {
+  .product__container {
+    padding: 6.25rem 6rem;
+  }
+
+  .product__heading {
+    margin-bottom: 4rem;
+  }
+
+  .product__feature {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .feature__icon {
+    margin-right: 1.5rem;
+  }
+
+  .feature__heading {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 69.375rem) {
+  .product::before {
+    top: unset;
+    bottom: 0;
+  }
+  .product__container {
+    padding: 8.75rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 7.75rem;
+  }
+
+  .product__heading {
+    margin: 0;
+    justify-content: flex-start;
+    font-size: 3rem;
+  }
+
+  .product__heading::before {
+    margin-bottom: 3.375rem;
+  }
+}
