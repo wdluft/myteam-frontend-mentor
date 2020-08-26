@@ -10,6 +10,7 @@
   --jungleGreen: #004047;
   --sacramentoGreen: #012f34;
   --darkGreen: #002529;
+  --robinBlue: #c4fffe;
 
   /* TEXT */
   --font: 'Livvic', sans-serif;
@@ -127,4 +128,13 @@ img {
 
 .accent {
   color: var(--lightCoral);
+}
+
+.accent--2 {
+  color: var(--raptureBlue);
+}
+
+.avatar {
+  border: 2px solid var(--robinBlue);
+  border-radius: 50%;
 }

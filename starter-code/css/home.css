@@ -52,7 +52,7 @@
     top: 10.75rem;
   }
   .hero__container {
-    padding: 10.75rem 0;
+    padding: 15.625rem 0;
     max-width: 69.375rem;
     margin: 0 auto;
     display: grid;
@@ -186,5 +186,114 @@
 
   .product__heading::before {
     margin-bottom: 3.375rem;
+  }
+}
+
+/* TESTIMONIALS SECTION */
+.testimonials {
+  position: relative;
+}
+
+.testimonials::before {
+  content: '';
+  position: absolute;
+  background-image: url('../images/bg-pattern-home-4-about-3.svg');
+  top: 0;
+  left: 0;
+  width: 147px;
+  height: 100px;
+}
+
+.testimonials::after {
+  content: '';
+  position: absolute;
+  background-image: url('../images/bg-pattern-home-5.svg');
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 100px;
+}
+
+.testimonials__container {
+  padding: 8.75rem 1.5rem;
+  text-align: center;
+}
+
+.testimonials__heading {
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: 3rem;
+}
+
+.testimonial {
+  margin-bottom: 3rem;
+  position: relative;
+  width: 100%;
+}
+
+.testimonial:last-child {
+  margin-bottom: 0;
+}
+
+.testimonial::before {
+  content: '';
+  position: absolute;
+  background-image: url('../images/icon-quotes.svg');
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 67px;
+  height: 56px;
+  z-index: -1;
+}
+
+.testimonial__quote {
+  font-size: var(--smallText);
+  line-height: var(--smallLineHeight);
+  margin-bottom: 1rem;
+  padding-top: 2.25rem;
+}
+
+.testimonial__name {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: var(--raptureBlue);
+}
+
+.testimonial__title {
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.testimonial__avatar {
+  width: 3.875rem;
+}
+
+@media screen and (min-width: 40rem) {
+  .testimonials__container {
+    padding: 6.25rem 6rem;
+  }
+}
+
+@media screen and (min-width: 69.375rem) {
+  .testimonials__container {
+    padding: 8.74rem 0;
+  }
+
+  .testimonials__heading {
+    font-size: 3rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    margin-bottom: 3.5rem;
+    line-height: 1;
+  }
+
+  .testimonials__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.875rem;
   }
 }
