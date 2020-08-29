@@ -13,9 +13,54 @@
 
     <title>Frontend Mentor | myteam website challenge - Contact</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
     <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <body>
+    <header class="header">
+      <nav class="nav__container">
+        <img src="./images/logo.svg" alt="Logo" class="nav__logoImg" />
+
+        <button class="nav__mobileMenuToggle">
+          <i
+            ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17">
+              <g fill="#FFF" fill-rule="evenodd">
+                <path d="M0 0h20v3H0zM0 7h20v3H0zM0 14h20v3H0z" />
+              </g>
+            </svg>
+          </i>
+        </button>
+
+        <div class="nav__links hideOnMobile">
+          <div>
+            <a href="./index.html" class="nav__link">home</a>
+            <a href="./about.html" class="nav__link">about</a>
+          </div>
+          <a href="./contact.html" class="btn nav__link">contact us</a>
+        </div>
+      </nav>
+
+      <div class="mobileMenuWrapper">
+        <div class="mobileMenu">
+          <div class="mobileMenu__container">
+            <button class="nav__mobileMenuToggle mobileMenuToggle--x">
+              <i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17">
+                  <path
+                    fill="#FFF"
+                    fill-rule="evenodd"
+                    d="M15.01.368l2.122 2.122-6.01 6.01 6.01 6.01-2.122 2.122L9 10.622l-6.01 6.01L.868 14.51 6.88 8.5.87 2.49 2.988.368 9 6.38 15.01.37z"
+                  />
+                </svg>
+              </i>
+            </button>
+            <a href="./index.html" class="mobileMenu__link">home</a>
+            <a href="./about.html" class="mobileMenu__link">about</a>
+            <button class="nav__button">contact us</button>
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- home
   about
 
@@ -49,18 +94,10 @@
           <a href="./about.html" class="footer__link smallText">about</a>
         </div>
         <div class="footer__address smallText">
-          <p>
-            987 Hillcrest Lane
-          </p>
-          <p>
-            Irvine, CA
-          </p>
-          <p>
-            California 92714
-          </p>
-          <p>
-            Call Us : 949-833-7432
-          </p>
+          <p>987 Hillcrest Lane</p>
+          <p>Irvine, CA</p>
+          <p>California 92714</p>
+          <p>Call Us : 949-833-7432</p>
         </div>
         <div class="footer__socials">
           <a href="#" class="footer__socialIcon smallText">
@@ -78,5 +115,7 @@
         </p>
       </div>
     </footer>
+
+    <script src="./scripts/main.js"></script>
   </body>
 </html>

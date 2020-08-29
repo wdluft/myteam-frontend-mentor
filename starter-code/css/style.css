@@ -33,6 +33,7 @@ body {
   font-size: 1.125rem;
   background: var(--midnightGreen);
   color: var(--white);
+  overflow-x: hidden;
 }
 
 .smallText {
@@ -137,4 +138,8 @@ img {
 .avatar {
   border: 2px solid var(--robinBlue);
   border-radius: 50%;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
