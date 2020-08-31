@@ -79,10 +79,9 @@
   content: '';
   position: absolute;
   background-image: url('../images/bg-pattern-about-2-contact-1.svg');
-  top: -100px;
-  left: -100px;
-  width: 200px;
-  height: 200px;
+  background-position: bottom right;
+  width: 100px;
+  height: 100px;
 }
 
 .team::after {
@@ -206,7 +205,7 @@
 
 @media screen and (min-width: 48rem) {
   .team::before {
-    top: 0;
+    height: 200px;
   }
 
   .team__container {
@@ -225,5 +224,141 @@
 
   .teamMembers {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ========================= */
+/* CLIENTS */
+/* ========================= */
+.clients {
+  position: relative;
+  background: var(--sacramentoGreen);
+}
+
+.clients::before {
+  content: '';
+  position: absolute;
+  background-image: url('../images/bg-pattern-about-4.svg');
+  background-position: bottom right;
+  height: 100px;
+  width: 100px;
+}
+
+.clients__container {
+  padding: 5.5rem 1.5rem;
+  text-align: center;
+}
+
+.clients__heading {
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: 4rem;
+}
+
+.clients__group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.client {
+  margin-bottom: 3.5rem;
+}
+
+#verge {
+  width: 147px;
+}
+
+#jakarta {
+  width: 162px;
+}
+
+#guardian {
+  width: 160px;
+}
+
+#techradar {
+  width: 147px;
+}
+
+#gadgets {
+  width: 87px;
+}
+
+.client:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 40rem) {
+  .clients::before {
+    width: 200px;
+  }
+
+  .clients__container {
+    padding: 6.25rem 2.5rem;
+  }
+
+  .clients__group {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .client {
+    margin-bottom: 0;
+  }
+
+  #verge {
+    width: 103px;
+  }
+
+  #jakarta {
+    width: 114px;
+  }
+
+  #guardian {
+    width: 112px;
+  }
+
+  #techradar {
+    width: 103px;
+  }
+
+  #gadgets {
+    width: 61px;
+  }
+}
+
+@media screen and (min-width: 69.375rem) {
+  .clients::before {
+    height: 200px;
+  }
+
+  .clients__container {
+    padding: 8.75rem 0;
+  }
+
+  .clients__heading {
+    font-size: 3rem;
+  }
+
+  #verge {
+    width: 165px;
+  }
+
+  #jakarta {
+    width: 184px;
+  }
+
+  #guardian {
+    width: 180px;
+  }
+
+  #techradar {
+    width: 165px;
+  }
+
+  #gadgets {
+    width: 98px;
   }
 }
