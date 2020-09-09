@@ -143,3 +143,69 @@ img {
 .no-scroll {
   overflow: hidden;
 }
+
+input,
+textarea {
+  background: none;
+  color: var(--white);
+  border: none;
+  border-bottom: solid 1px var(--white);
+  padding-bottom: 1.25rem;
+  padding-left: 0.75rem;
+  font-size: var(--smallText);
+  line-height: var(--smallLineHeight);
+  font-weight: 600;
+  width: 100%;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: var(--smallText);
+  line-height: var(--smallLineHeight);
+}
+
+textarea {
+  /* padding-bottom: 3.625rem; */
+  padding-bottom: 0;
+  /* font-size: var(--smallText); */
+  font-size: 15px;
+  line-height: var(--smallLineHeight);
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-bottom: solid 1px var(--raptureBlue);
+}
+
+form > div > input[type='text']:invalid:focus,
+form > div > input[type='email']:invalid:focus,
+form > div > textarea:invalid:focus {
+  border-color: var(--lightCoral);
+}
+
+form > div > input[type='text']:invalid:focus::placeholder,
+form > div > input[type='email']:invalid:focus::placeholder,
+form > div > textarea:invalid:focus::placeholder {
+  color: rgba(246, 126, 126, 0.6);
+}
+
+form > div > input[type='text']:invalid:focus ~ .requirements,
+form > div > input[type='email']:invalid:focus ~ .requirements,
+form > div > textarea:invalid:focus ~ .requirements {
+  margin-top: -0.875rem;
+  margin-bottom: 1rem;
+  max-height: 1rem;
+}
+
+form > div .requirements {
+  max-height: 0;
+  transition: var(--transition);
+  overflow: hidden;
+  color: var(--lightCoral);
+  font-size: 0.625rem;
+  font-style: italic;
+  padding-left: 0.75rem;
+}

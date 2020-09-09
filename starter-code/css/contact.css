@@ -1,0 +1,132 @@
+.contact {
+  position: relative;
+}
+
+.contact::after {
+  content: '';
+  position: absolute;
+  background-image: url('../images/bg-pattern-contact-2.svg');
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 112px;
+}
+
+.contact__container {
+  padding: 10rem 1.5rem 5.5rem;
+  text-align: center;
+}
+
+.contact__info {
+  margin-bottom: 3.5rem;
+}
+
+.contact__heading {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact__subheading {
+  font-size: 2rem;
+  line-height: 3rem;
+  color: var(--lightCoral);
+  margin-bottom: 2.5rem;
+}
+
+.contact__question {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.contact__question:last-child {
+  margin-bottom: 0;
+}
+
+.contact__questionImg {
+  margin-right: 1.5rem;
+}
+
+.contact__form {
+  text-align: left;
+}
+
+.form__input {
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 40rem) {
+  .contact::before {
+    content: '';
+    position: absolute;
+    background-image: url('../images/bg-pattern-about-2-contact-1.svg');
+    height: 200px;
+    width: 200px;
+    left: -100px;
+    top: 224px;
+  }
+
+  .contact::after {
+    height: 225px;
+  }
+
+  .contact__container {
+    padding: 14rem 7rem 7rem;
+  }
+
+  .contact__heading {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact__subheading {
+    margin-bottom: 1.5rem;
+  }
+
+  .contact__info {
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (min-width: 69.375rem) {
+  .contact__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 69.375rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 15rem;
+    padding-bottom: 7.5rem;
+  }
+
+  .contact__heading {
+    line-height: 6.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact__subheading {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact__question {
+    margin-bottom: 0.5rem;
+  }
+
+  .contact__questionImg {
+    width: 4.5rem;
+  }
+
+  form textarea {
+    height: 5.25rem;
+  }
+
+  .form__btn {
+    font-size: 1.125rem;
+  }
+}
