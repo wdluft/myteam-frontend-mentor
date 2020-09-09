@@ -91,7 +91,7 @@ footer {
   .footer__container {
     max-width: 69.375rem;
     margin: 0 auto;
-    padding: 3rem 0;
+    padding: 3rem 6.25rem;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
       'logo address . socials'
@@ -123,5 +123,12 @@ footer {
 
   .footer__copyright {
     align-self: end;
+  }
+}
+
+@media screen and (min-width: 81.25rem) {
+  .footer__container {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

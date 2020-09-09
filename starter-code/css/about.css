@@ -43,7 +43,7 @@
 
 @media screen and (min-width: 69.375rem) {
   .hero__container {
-    padding: 15rem 0 7.5rem;
+    padding: 15rem 6.25rem 7.5rem;
     text-align: left;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -64,6 +64,13 @@
     height: 0.25rem;
     background: var(--lightCoral);
     margin-bottom: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 81.25rem) {
+  .hero__container {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -219,11 +226,18 @@
 
 @media screen and (min-width: 64rem) {
   .team__container {
-    padding: 8.75rem 0 10.5rem;
+    padding: 8.75rem 6.25rem 10.5rem;
   }
 
   .teamMembers {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 81.25rem) {
+  .team__container {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -335,7 +349,7 @@
   }
 
   .clients__container {
-    padding: 8.75rem 0;
+    padding: 8.75rem 6.25rem;
   }
 
   .clients__heading {
@@ -360,5 +374,12 @@
 
   #gadgets {
     width: 98px;
+  }
+}
+
+@media screen and (min-width: 81.25rem) {
+  .clients__container {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

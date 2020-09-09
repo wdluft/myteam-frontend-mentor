@@ -119,10 +119,17 @@
 
 @media screen and (min-width: 69.375rem) {
   .nav__container {
-    padding: 0;
+    padding: 0 6.25rem;
     max-width: 69.375rem;
     margin: 4.5rem auto 0 auto;
     right: 0;
     left: 0;
+  }
+}
+
+@media screen and (min-width: 81.25rem) {
+  .nav__container {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

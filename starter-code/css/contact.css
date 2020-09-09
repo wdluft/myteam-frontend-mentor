@@ -97,8 +97,8 @@
     text-align: left;
     margin: 0 auto;
     max-width: 69.375rem;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
     padding-top: 15rem;
     padding-bottom: 7.5rem;
   }
@@ -128,5 +128,12 @@
 
   .form__btn {
     font-size: 1.125rem;
+  }
+}
+
+@media screen and (min-width: 81.25rem) {
+  .contact__container {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
